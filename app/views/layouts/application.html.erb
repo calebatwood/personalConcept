@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='description' content='Caleb Atwood full stack web developer, photography, food, design, automotive enthusiast'>
+  <title>CalebAtwood</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id='pageWrapper'>
+    <header>
+      <p class='showNav'>M E N U</p>
+    </header>
+    <div id='navWrapper'>
+      <nav>
+        <ul>
+          <li>stuff</li>
+          <li>goes</li>
+          <li>here</li>
+        </ul>
+      </nav>
+    </div>
+    <div id='contentWrapper'>
+      <div id='banner' class='row'>
+        <div class='col-xs-12 landingPhoto'>
+          <%= image_tag('landingLogo.png') %>
+        </div>
+      </div>
+
+
+          <main>
+            <%= yield %>
+          </main>
+          <footer></footer>
+    </div>
+  </div>
+</body>
+</html>
